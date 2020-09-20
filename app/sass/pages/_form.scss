@@ -1,0 +1,15 @@
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.input-field {
+    @include flex-container(column);
+    margin-bottom: 15px;
+
+    label {
+        padding-bottom: 5px;
+    }
+}

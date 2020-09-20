@@ -1,0 +1,9 @@
+header {
+    @include flex-container();
+    background-color: var(--sidebar-background-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+}

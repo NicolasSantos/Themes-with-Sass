@@ -1,0 +1,20 @@
+%toast {
+    @include box-shadow(0 0 8px #999);
+    @include transition(.2s all ease-in-out);
+    @include position(fixed, 50px, 30px, null, null);
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 1;
+    
+    &.toast-hide {
+        opacity: 0;
+        right: -230px;
+    }
+}
+
+.toast-success {
+    @extend %toast;
+    background-color: var(--success-background-color);
+    color: var(--success-color);
+}

@@ -1,0 +1,35 @@
+.sidebar {
+    @include flex-container(column);
+    @include position(fixed);
+    @include box-shadow(-3px 0px 10px 0px #555);
+    @include transition(.1s width ease-in-out);
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+    background-color: var(--sidebar-background-color);;
+    
+    a {
+        @include flex-container(null, null, center);
+        color: var(--body-color);
+        text-decoration: none;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px 10px;
+        
+        &.active {
+            background-color: var(--sidebar-active-background-color);
+            &:hover {
+                background-color: var(--sidebar-active-hover-background-color);
+            }
+        }
+
+        &:hover {
+            background-color: var(--sidebar-hover-background-color);
+        }
+    }
+
+    &.sidebar-hide {
+        width: 0px;
+    }
+}

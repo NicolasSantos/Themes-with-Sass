@@ -1,0 +1,203 @@
+$themes: (
+    default: (
+        primary-color: #00C8B3,
+        secondary-color: #FFFFFF,
+        body: (
+            background-color: #F9F9F9,
+            color: #0D0D0D
+        ),
+        input: (
+            color: #333333,
+            background-color: #FFFFFF,
+            border-color: #DDDDDD,
+            error: (
+                color:#eb4a46
+            )
+        ),
+        button: (
+            background-color: #00C8B3,
+            color: #FFFFFF,
+            hover: (
+                background-color: lighten(#00C8B3, 5%)
+            )
+        ),
+        span: (
+            error: (
+                color: #eb4a46
+            )
+        ),
+        table: (
+            border-color: #EFEEED,
+            hover: (
+                background-color: darken(#FFFFFF, 5%),
+                color: #EFEEED
+            )
+        ),
+        i: (
+            default: (
+                color: #606060
+            ),
+            save: (
+                color: #4caf50
+            ),
+            cancel: (
+                color: #F44336
+            )
+        ),
+        sidebar: (
+            background-color: #FFFFFF,
+            active: (
+                background-color: darken(#FFFFFF, 10%),
+                hover: (
+                    background-color: darken(#FFFFFF, 15%)
+                )
+            ),
+            hover: (
+                background-color: darken(#FFFFFF, 5%) 
+            )
+        ),
+        success: (
+            background-color: #4caf50,
+            color: #FFFFFF
+        ),
+        switch: (
+            on-color: #00C8B3,
+            off-color: lighten(#282828, 15%),
+            background-color: darken(#FFFFFF, 15%)
+        )
+    ),
+    dark: (
+        primary-color: #00C8B3,
+        secondary-color: #FFFFFF,
+        body: (
+            background-color: #1F1F1F,
+            color: #FFFFFF
+        ),
+        input: (
+            color: #FFFFFF,
+            background-color: #393F44,
+            border-color: #DDDDDD,
+            error: (
+                color:#CF6679
+            )
+        ),
+        button: (
+            background-color: #00C8B3,
+            color: #FFFFFF,
+            hover: (
+                background-color: lighten(#00C8B3, 5%)
+            )
+        ),
+        span: (
+            error: (
+                color: #CF6679
+            )
+        ),
+        table: (
+            border-color: #EFEEED,
+            hover: (
+                background-color: lighten(#282828, 5%),
+                color: #EFEEED
+            )
+        ),
+        i: (
+            default: (
+                color: #FFFFFF
+            ),
+            save: (
+                color: #4caf50
+            ),
+            cancel: (
+                color: #F44336
+            )
+        ),
+        sidebar: (
+            background-color: #282828,
+            active: (
+                background-color: lighten(#282828, 10%),
+                hover: (
+                    background-color: lighten(#282828, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#282828, 5%) 
+            )
+        ),
+        success: (
+            background-color: #4caf50,
+            color: #FFFFFF
+        ),
+        switch: (
+            on-color: #00C8B3,
+            off-color: lighten(#282828, 5%),
+            background-color: lighten(#282828, 15%)
+        )
+    ),
+    dark-blue: (
+        primary-color: darkblue,
+        secondary-color: #FFFFFF,
+        body: (
+            background-color: #1F1F1F,
+            color: #FFFFFF
+        ),
+        input: (
+            color: #FFFFFF,
+            background-color: #393F44,
+            border-color: #DDDDDD,
+            error: (
+                color:#CF6679
+            )
+        ),
+        button: (
+            background-color: darkblue,
+            color: #FFFFFF,
+            hover: (
+                background-color: lighten(darkblue, 5%)
+            )
+        ),
+        span: (
+            error: (
+                color: #CF6679
+            )
+        ),
+        table: (
+            border-color: #EFEEED,
+            hover: (
+                background-color: lighten(#282828, 5%),
+                color: #EFEEED
+            )
+        ),
+        i: (
+            default: (
+                color: #FFFFFF
+            ),
+            save: (
+                color: #4caf50
+            ),
+            cancel: (
+                color: #F44336
+            )
+        ),
+        sidebar: (
+            background-color: #282828,
+            active: (
+                background-color: lighten(#282828, 10%),
+                hover: (
+                    background-color: lighten(#282828, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#282828, 5%) 
+            )
+        ),
+        success: (
+            background-color: #4caf50,
+            color: #FFFFFF
+        ),
+        switch: (
+            on-color: darkblue,
+            off-color: lighten(#282828, 5%),
+            background-color: lighten(#282828, 15%)
+        )
+    )
+);

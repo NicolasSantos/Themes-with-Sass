@@ -1,0 +1,106 @@
+@mixin flex-container($flex-direction: null, $justify-content: null, $align-items: null) {
+    display: flex;
+
+    @if($flex-direction) {
+        flex-direction: $flex-direction;
+    }
+
+    @if($justify-content) {
+        justify-content: $justify-content;
+    }
+
+    @if($align-items) {
+        align-items: $align-items;
+    }
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+
+    @if($top) {
+        top: $top;
+    } 
+    
+    @if($right) {
+        right: $right;
+    } 
+    
+    @if($bottom) {
+        bottom: $bottom;
+    }
+
+    @if($top) {
+        left: $left;
+    }
+}
+
+@mixin truncate($max-width) {
+    max-width: $max-width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin animation($args...) {
+    -webkit-animation: $args;
+    animation: $args;
+}
+
+@mixin gradient($args...) {
+    background: -moz-linear-gradient($args);
+    background: -webkit-linear-gradient($args);
+    background: -o-linear-gradient($args);
+    background: -ms-linear-gradient($args);
+    background: linear-gradient($args);
+}
+
+@mixin placeholder($color) {
+    &.placeholder { color: $color; }
+    &:-moz-placeholder { color: $color; }
+    &::-moz-placeholder { color: $color; }
+    &:-ms-input-placeholder { color: $color; }
+    &::-webkit-input-placeholder { color: $color; }
+}
+
+@mixin keyframes($name, $start-rotate, $end-rotate) {
+    @-webkit-keyframes #{$name} {
+        0% {
+            -webkit-transform: rotate($start-rotate);
+            transform: rotate($start-rotate);
+        }
+        100% {
+            -webkit-transform: rotate($end-rotate);
+            transform: rotate($end-rotate);
+        }
+    }
+      
+    @keyframes #{$name} {
+        0% {
+            -webkit-transform: rotate($start-rotate);
+            transform: rotate($start-rotate);
+        }
+        100% {
+            -webkit-transform: rotate($end-rotate);
+            transform: rotate($end-rotate);
+        }
+    }
+}

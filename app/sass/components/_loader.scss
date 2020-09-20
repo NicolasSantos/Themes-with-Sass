@@ -1,0 +1,32 @@
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    @include gradient(left var(--secondary-color) 10% rgba(var(--secondary-color), 0) 42%);
+    @include position(relative);
+    @include animation(spinner 1.4s infinite linear);
+    @include transform(translateZ(0));
+
+    &:before {
+        content: '';
+        width: 50%;
+        height: 50%;
+        background: var(--secondary-color);
+        border-radius: 100% 0 0 0;
+        @include position(absolute, 0, null, null, 0);
+    }
+      
+    &:after {
+        content: '';
+        width: 75%;
+        height: 75%;
+        background: var(--primary-color);
+        border-radius: 50%;
+        margin: auto;
+        @include position(absolute, 0, 0, 0, 0);
+    }
+}

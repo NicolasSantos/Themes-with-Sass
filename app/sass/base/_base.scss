@@ -1,0 +1,110 @@
+.linha {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+%col-l {
+    float: left;
+    height: inherit;
+    outline: 1px solid black;
+}
+
+@mixin coluna-default() {
+    float: left;
+    height: inherit;
+}
+
+$cont: 1;
+$colunas: 12;
+$tamanho-coluna: 100% / $colunas;
+
+@while $cont <= $colunas {
+    .col-l#{$cont}{
+        @extend %col-l;
+        width: $tamanho-coluna * $cont;
+    }
+
+    $cont: $cont + 1;
+} 
+
+@each $theme in map-keys($themes) {
+    // @debug $theme;
+
+    [data-theme=#{$theme}] {
+        --primary-color: #{get($theme + '.primary-color')};
+        --secondary-color: #{get($theme + '.secondary-color')};
+        --body-background-color: #{get($theme + '.body.background-color')};
+        --body-color: #{get($theme + '.body.color')};
+        --input-color: #{get($theme + '.input.color')};
+        --input-background-color: #{get($theme + '.input.background-color')};
+        --input-border-color: #{get($theme + '.input.border-color')};
+        --input-error-color: #{get($theme + '.input.error.color')};
+        --button-background-color: #{get($theme + '.button.background-color')};
+        --button-color: #{get($theme + '.button.color')};
+        --button-hover-background-color: #{get($theme + '.button.hover.background-color')};
+        --span-error-color: #{get($theme + '.span.error.color')};
+        --table-border-color: #{get($theme + '.table.border-color')};
+        --table-hover-color: #{get($theme + '.table.hover.color')};
+        --table-hover-background-color: #{get($theme + '.table.hover.background-color')};
+        --i-default-color: #{get($theme + '.i.default.color')};
+        --i-save-color: #{get($theme + '.i.save.color')};
+        --i-cancel-color: #{get($theme + '.i.cancel.color')};
+        --sidebar-background-color: #{get($theme + '.sidebar.background-color')};
+        --sidebar-active-background-color: #{get($theme + '.sidebar.active.background-color')};
+        --sidebar-active-hover-background-color: #{get($theme + '.sidebar.active.hover.background-color')};
+        --sidebar-hover-background-color: #{get($theme + '.sidebar.hover.background-color')};
+        --success-background-color: #{get($theme + '.success.background-color')};
+        --success-color: #{get($theme + '.success.color')};
+        --switch-on-color: #{get($theme + '.switch.on-color')};
+        --switch-off-color: #{get($theme + '.switch.off-color')};
+        --switch-background-color: #{get($theme + '.switch.background-color')};
+    }
+}
+
+body {
+    background: var(--body-background-color);
+    color: var(--body-color);
+    margin: 0px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+h1 {
+    color: var(--body-color);
+}
+
+a, i {
+    cursor: pointer;
+}
+
+a {
+    i {
+        &:hover {
+          opacity: 0.5;
+        }
+    }
+} 
+
+.hide {
+    display: none;
+}
+
+.menu-icon {
+    @include flex-container(null, null, center);
+    color: var(--i-default-color);
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.container {
+    @include flex-container(column);
+    padding: 60px 30px 0px 30px;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    color: var(--span-error-color);
+    font-size: 12px;
+    padding-top: 5px;
+}

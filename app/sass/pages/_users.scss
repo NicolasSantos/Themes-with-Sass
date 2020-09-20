@@ -1,0 +1,29 @@
+.table-container {
+    overflow-x: auto;
+
+    input {
+        @include truncate(initial);
+    }
+
+    a {
+        padding: 0px 5px;
+        
+        &.save {
+            i {
+                color: var(--i-save-color);
+            }
+        }
+        
+        &.cancel {
+            i {
+                color: var(--i-cancel-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    input {
+        width: initial;
+    }
+}

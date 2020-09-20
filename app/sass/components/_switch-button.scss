@@ -1,0 +1,49 @@
+.toggle-switch {
+    margin-top: 20px;
+    padding-left: 10px;
+
+    input[type=checkbox] {
+        display:none;
+        
+        &:checked { 
+            & + label { 
+                .toggle-track {
+                    &:before {
+                        background:var(--switch-on-color);
+                        right:-5px;
+                    }
+                }
+            }
+        }
+    }
+
+    label {
+        @include flex-container();
+        width: 100%;
+        cursor:pointer; 
+    }
+    
+    .toggle-track {
+        @include position(relative);
+        display:block;
+        width:50px;
+        height:15px;
+        background:var(--switch-background-color);
+        border-radius:20px;
+        border:1px solid #ccc;
+        margin-left: 25px;
+        margin-top: 5px;
+        
+        &:before{
+            content:'';
+            @include position(absolute, -5px, 40px);
+            @include transition(right .2s ease-in-out);
+            @include box-shadow(0 1px 5px 0 rgba(0, 0, 0, 0.6));
+            display:inline-block;
+            width:25px;
+            height:25px;
+            background:var(--switch-off-color);
+            border-radius:20px;
+        }
+    }
+}

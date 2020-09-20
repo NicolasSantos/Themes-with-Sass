@@ -1,0 +1,25 @@
+input {
+    padding: 10px 5px;
+    border: 1px solid var(--input-border-color);
+    outline: none;
+    background: var(--input-background-color);
+    color: var(--input-color);
+    @include transition(all .1s ease-in-out);
+    @include placeholder(var(--input-color));
+    
+    &:disabled {
+        background: transparent;
+        color: var(--input-color);
+        border: none;
+    }
+    
+    &.invalid  {
+        border: none;
+        border: 1px solid var(--input-error-color);
+    }
+    
+    &:focus {
+        outline: none;
+        border: 1px solid var(--primary-color);
+    }
+}
