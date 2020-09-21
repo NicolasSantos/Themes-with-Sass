@@ -1,5 +1,5 @@
 $themes: (
-    default: (
+    theme-default: (
         primary-color: #00C8B3,
         secondary-color: #FFFFFF,
         body: (
@@ -64,14 +64,26 @@ $themes: (
             on-color: #00C8B3,
             off-color: lighten(#282828, 15%),
             background-color: darken(#FFFFFF, 15%)
+        ),
+        dropdown: (
+            background-color: #FFFFFF,
+            active: (
+                background-color: darken(#FFFFFF, 10%),
+                hover: (
+                    background-color: darken(#FFFFFF, 15%)
+                )
+            ),
+            hover: (
+                background-color: darken(#FFFFFF, 5%)
+            )
         )
     ),
-    dark: (
+    theme-dark: (
         primary-color: #00C8B3,
         secondary-color: #FFFFFF,
         body: (
             background-color: #1F1F1F,
-            color: #FFFFFF
+            color: #E1E1E1
         ),
         input: (
             color: #FFFFFF,
@@ -120,7 +132,7 @@ $themes: (
                 )
             ),
             hover: (
-                background-color: lighten(#282828, 5%) 
+                background-color: lighten(#282828, 5%)
             )
         ),
         success: (
@@ -131,14 +143,26 @@ $themes: (
             on-color: #00C8B3,
             off-color: lighten(#282828, 5%),
             background-color: lighten(#282828, 15%)
+        ),
+        dropdown: (
+            background-color: #1F1F1F,
+            active: (
+                background-color: lighten(#1F1F1F, 10%),
+                hover: (
+                    background-color: lighten(#1F1F1F, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#1F1F1F, 5%)
+            )
         )
     ),
-    dark-blue: (
-        primary-color: darkblue,
+    theme-red: (
+        primary-color: #D50000,
         secondary-color: #FFFFFF,
         body: (
-            background-color: #1F1F1F,
-            color: #FFFFFF
+            background-color: #FF5252,
+            color:#FFFFFF
         ),
         input: (
             color: #FFFFFF,
@@ -149,10 +173,10 @@ $themes: (
             )
         ),
         button: (
-            background-color: darkblue,
+            background-color: #D50000,
             color: #FFFFFF,
             hover: (
-                background-color: lighten(darkblue, 5%)
+                background-color: lighten(#D50000, 5%)
             )
         ),
         span: (
@@ -163,7 +187,7 @@ $themes: (
         table: (
             border-color: #EFEEED,
             hover: (
-                background-color: lighten(#282828, 5%),
+                background-color: lighten(#FF5252, 5%),
                 color: #EFEEED
             )
         ),
@@ -179,15 +203,15 @@ $themes: (
             )
         ),
         sidebar: (
-            background-color: #282828,
+            background-color: #FF5252,
             active: (
-                background-color: lighten(#282828, 10%),
+                background-color: lighten(#FF5252, 10%),
                 hover: (
-                    background-color: lighten(#282828, 15%)
+                    background-color: lighten(#FF5252, 15%)
                 )
             ),
             hover: (
-                background-color: lighten(#282828, 5%) 
+                background-color: lighten(#FF5252, 5%)
             )
         ),
         success: (
@@ -195,9 +219,179 @@ $themes: (
             color: #FFFFFF
         ),
         switch: (
-            on-color: darkblue,
+            on-color: #D50000,
             off-color: lighten(#282828, 5%),
             background-color: lighten(#282828, 15%)
+        ),
+        dropdown: (
+            background-color: #FF5252,
+            active: (
+                background-color: lighten(#FF5252, 10%),
+                hover: (
+                    background-color: lighten(#FF5252, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#FF5252, 5%)
+            )
+        )
+    ),
+    theme-green: (
+        primary-color: #00C853,
+        secondary-color: #FFFFFF,
+        body: (
+            background-color: #81C784,
+            color: #FFFFFF
+        ),
+        input: (
+            color: #FFFFFF,
+            background-color: #393F44,
+            border-color: #DDDDDD,
+            error: (
+                color:#CF6679
+            )
+        ),
+        button: (
+            background-color: #00C853,
+            color: #FFFFFF,
+            hover: (
+                background-color: lighten(#00C853, 5%)
+            )
+        ),
+        span: (
+            error: (
+                color: #CF6679
+            )
+        ),
+        table: (
+            border-color: #EFEEED,
+            hover: (
+                background-color: lighten(#81C784, 5%),
+                color: #EFEEED
+            )
+        ),
+        i: (
+            default: (
+                color: #FFFFFF
+            ),
+            save: (
+                color: #4caf50
+            ),
+            cancel: (
+                color: #F44336
+            )
+        ),
+        sidebar: (
+            background-color: #81C784,
+            active: (
+                background-color: lighten(#81C784, 10%),
+                hover: (
+                    background-color: lighten(#81C784, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#81C784, 5%)
+            )
+        ),
+        success: (
+            background-color: #4caf50,
+            color: #FFFFFF
+        ),
+        switch: (
+            on-color: #00C853,
+            off-color: lighten(#282828, 5%),
+            background-color: lighten(#282828, 15%)
+        ),
+        dropdown: (
+            background-color: #81C784,
+            active: (
+                background-color: lighten(#81C784, 10%),
+                hover: (
+                    background-color: lighten(#81C784, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#81C784, 5%)
+            )
+        )
+    ),
+    theme-blue: (
+        primary-color: #2962FF,
+        secondary-color: #FFFFFF,
+        body: (
+            background-color: #448AFF,
+            color:#FFFFFF
+        ),
+        input: (
+            color: #FFFFFF,
+            background-color: #393F44,
+            border-color: #DDDDDD,
+            error: (
+                color:#CF6679
+            )
+        ),
+        button: (
+            background-color: #2962FF,
+            color: #FFFFFF,
+            hover: (
+                background-color: lighten(#2962FF, 5%)
+            )
+        ),
+        span: (
+            error: (
+                color: #CF6679
+            )
+        ),
+        table: (
+            border-color: #EFEEED,
+            hover: (
+                background-color: lighten(#448AFF, 5%),
+                color: #EFEEED
+            )
+        ),
+        i: (
+            default: (
+                color: #FFFFFF
+            ),
+            save: (
+                color: #4caf50
+            ),
+            cancel: (
+                color: #F44336
+            )
+        ),
+        sidebar: (
+            background-color: #448AFF,
+            active: (
+                background-color: lighten(#448AFF, 10%),
+                hover: (
+                    background-color: lighten(#448AFF, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#448AFF, 5%)
+            )
+        ),
+        success: (
+            background-color: #4caf50,
+            color: #FFFFFF
+        ),
+        switch: (
+            on-color: #2962FF,
+            off-color: lighten(#282828, 5%),
+            background-color: lighten(#282828, 15%)
+        ),
+        dropdown: (
+            background-color: #448AFF,
+            active: (
+                background-color: lighten(#448AFF, 10%),
+                hover: (
+                    background-color: lighten(#448AFF, 15%)
+                )
+            ),
+            hover: (
+                background-color: lighten(#448AFF, 5%)
+            )
         )
     )
 );

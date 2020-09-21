@@ -1,4 +1,17 @@
-var countToasts = 0; 
+var countToasts = 0;
+const THEME = {
+    DEFAULT: 'theme-default',
+    DARK: 'theme-dark',
+    RED: 'theme-red',
+    GREEN: 'theme-green',
+    BLUE: 'theme-blue'
+}
+
+const themeColors = [
+    { type: THEME.RED, name: 'Red', color: 'red' },
+    { type: THEME.GREEN, name: 'Green', color: 'green' },
+    { type: THEME.BLUE, name: 'Blue', color: 'blue' }
+]
 
 const openSidebar = (event) => {
     document.getElementsByClassName("sidebar")[0].classList.remove("sidebar-hide");
@@ -92,27 +105,59 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 const checkSwicth = (element) => {
     if (element.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('data-theme', 'dark');
+        changeAttributeDataTheme(THEME.DARK);
     } else {
-        document.documentElement.setAttribute('data-theme', 'default');
-        localStorage.setItem('data-theme', 'default');
+        changeAttributeDataTheme(THEME.DEFAULT);
     } 
 }
 
 const initSwitch = (element) => {
     let theme = localStorage.getItem('data-theme');
 
-    if(!theme || theme == 'default') {
+    if(!theme || theme == THEME.DEFAULT) {
         element.checked = false;
     } else {
         element.checked = true;
     }
 }
 
-function changeTheme(e) {
-    checkSwicth(e.target); 
+const generateDropdownTheme = (element) => {
+    const dropdownThemeContent = document.querySelector('#theme-colors .dropdown-content');
+
+    themeColors.forEach((theme) => {
+        let dropdownItemElement = document.createElement('a');
+        dropdownItemElement.addEventListener('click', (e) => {
+            changeAttributeDataTheme(theme.type);
+            changeThemeSwitch(document.querySelector('.toggle-switch input[type="checkbox"]'), true);
+        }, false);
+        dropdownItemElement.innerText = theme.name;
+
+        dropdownThemeContent.appendChild(dropdownItemElement);
+    })
 }
+
+function changeAttributeDataTheme(themeType) {
+    document.documentElement.setAttribute('data-theme', themeType || THEME.DEFAULT);
+    localStorage.setItem('data-theme', themeType || THEME.DEFAULT);
+}
+
+function changeThemeSwitch(element, hasChangeCustomTheme) {
+    if(hasChangeCustomTheme) {
+        element.checked = false;
+    } else {
+        checkSwicth(element);
+    }
+}
+
+function loadTheme() {
+    const themeType = localStorage.getItem('data-theme');
+    changeAttributeDataTheme(themeType);
+
+    if(themeType == THEME.DEFAULT || themeType == THEME.DARK) {
+        initSwitch(document.querySelector('.toggle-switch input[type="checkbox"]'));
+    }
+}
+
 module.exports = {
     showLoading: showLoading,
     hideLoading: hideLoading,

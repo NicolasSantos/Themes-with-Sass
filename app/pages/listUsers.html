@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="default">
+<html data-theme="theme-default">
     <head>
         <title>Lista de Usuários</title>
         <meta charset="utf-8">
@@ -17,14 +17,24 @@
 
         <nav class="sidebar sidebar-hide">
             <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i> </span>
-            <a id="form-item" href="./index.html">Formulário</a>
-            <a id="listusers-item" href="./listUsers.html">Lista de usuários</a>
-            <div class="toggle-switch">
+            <a class="sidebar-item" id="form-item" href="./index.html">Formulário</a>
+            <a class="sidebar-item" id="listusers-item" href="./listUsers.html">Lista de Usuários</a>
+
+            <hr class="divider">
+            
+            <div class="sidebar-item toggle-switch">
                 <input type="checkbox" id="chkTest" name="chkTest">
                 <label for="chkTest">
                     Dark Mode: <span class="toggle-track"></span>
                 </label>
-            </div>            
+            </div>    
+
+            <div class="sidebar-item">
+                <div id="theme-colors" class="dropdown">
+                    <div class="dropbtn">Temas</div>
+                    <div class="dropdown-content"></div>
+                </div>
+            </div>
         </nav>
 
         <header>

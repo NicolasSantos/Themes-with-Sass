@@ -59,6 +59,10 @@ $tamanho-coluna: 100% / $colunas;
         --switch-on-color: #{get($theme + '.switch.on-color')};
         --switch-off-color: #{get($theme + '.switch.off-color')};
         --switch-background-color: #{get($theme + '.switch.background-color')};
+        --dropdown-background-color: #{get($theme + '.dropdown.background-color')};
+        --dropdown-active-background-color: #{get($theme + '.dropdown.active.background-color')};
+        --dropdown-active-hover-background-color: #{get($theme + '.dropdown.active.hover.background-color')};
+        --dropdown-hover-background-color: #{get($theme + '.dropdown.hover.background-color')};
     }
 }
 
@@ -67,6 +71,7 @@ body {
     color: var(--body-color);
     margin: 0px;
     font-family: "Segoe UI",Arial,sans-serif;
+    @include transition(all .1s ease-in-out);
 }
 
 h1 {
@@ -107,4 +112,8 @@ a {
     color: var(--span-error-color);
     font-size: 12px;
     padding-top: 5px;
+}
+
+.divider {
+    width: 100%;
 }

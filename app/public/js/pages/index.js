@@ -66,9 +66,12 @@ const getListUsersDefault = () => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const switchButton = document.querySelector('.toggle-switch input[type="checkbox"]');
-    initSwitch(switchButton);
-    checkSwicth(switchButton);   
-    switchButton.addEventListener('change', changeTheme, false);
+    switchButton.addEventListener('change', (e) => {
+        changeThemeSwitch(e.target);
+    }, false);
+
+    generateDropdownTheme();
+    loadTheme();
 
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
 
