@@ -33,25 +33,25 @@ describe('Loading', () => {
 });
 
 describe('Toast', () => {
-    test("Exibir toast", () => {
+    test("Exibir toast success", () => {
         document.body.innerHTML =
-            '<div class="toast toast-hide">' +
+            '<div class="toast toast-success toast-hide">' +
             '   <span class="toast-message"></span>' +
             '</div>'
 
-        showToast();
+        showToast('My Toast');
         const toast = document.querySelector(".toast");
 
         expect(toast.classList).not.toContain('toast-hide');
     });
 
-    test("Esconder toast", () => {
+    test("Esconder toast success", () => {
         document.body.innerHTML =
-            '<div class="toast toast-hide">' +
+            '<div class="toast toast-success toast-hide">' +
             '   <span class="toast-message"></span>' +
             '</div>'
 
-        showToast();
+        showToast('My Toast');
         hideToast();
         const toast = document.querySelector(".toast");
 
