@@ -5,7 +5,7 @@
   	<img src="/app/public/images/themes-with-sass theme-colors.gif" width="49%" style="padding-left: 2%"/> 
 </p>
 
-**Link do Exemplo:** [Temas e Dark Mode](http://theme-with-sass.s3-website-sa-east-1.amazonaws.com/)
+**Link do Projeto:** [Temas e Dark Mode](http://theme-with-sass.s3-website-sa-east-1.amazonaws.com/)
 
 ## Observações importantes antes de começar
 
