@@ -123,8 +123,26 @@ Não vou me alongar muito mais, mas aqui vai uma breve explicação com alguns d
 
 - É importante manter a cor primária do seu sistema sempre que possível, para preservar a identidade dele, mesmo que seja um detalhe na tela. Quer um exemplo? Vá até algum canal do **YouTube** em que você **não** esteja inscrito. Se você está com o modo noturno **inativo** repare que o botão **INSCREVER-SE** está com o fundo vermelho. Agora ative o modo noturno. Repare que o botão ainda continuou em vermelho.
 
-## Conclusão
+## Considerações
 
+Todo projeto novo costumamos aprender alguma coisa, por mais pequena que seja, mas nesse aqui eu diria que eu aprendi muito mais do que eu imaginava, porque isso mexeu tanto com minha parte técnica como pessoal.
+
+Com relação a parte técnica eu aprendi: 
+
+- Variáveis CSS que foi o coração desse projeto. Elas ajudam a trazer uma dinamicidade maior para os sistemas, por você poder alterá-las via Javascript e até substituem parte de alguns recursos que os pré-processadores têm;
+- Trabalhar melhor com o Sass e utilizar seus recursos menos utilizados, mas que foram imprescindíveis para desenvolver esse projeto, como a variável do tipo map, functions, mixins, placeholders, etc;
+- Depois de pesquisar sobre o dark mode, comecei a ver quais tecnologias eu poderia utilizar e aí que entra uma das partes mais legais, combinar/encaixar todas elas. Essa comunicação entre amis de uma tecnologia é essencial em qualquer projeto, porque raramente vai ter uma tecnologia específica que vai resolver todos os seus problemas.
+- Utilizar melhor alguns recursos do CSS como animações com o atributo `transition`, que é algo relativamente básico, mas que traz uma interação muito mais fluída com o usuário.
+
+Já a parte pessoal está relacionado tanto com as motivações para iniciar esse projeto como disse nos tópicos iniciais quanto com a forma e o tempo gasto para desenvolver o projeto. Vou elencar tanto alguns pontos positivos quanto alguns negativos ou de atenção juntos:
+
+- Confiança. Pra mim isso foi umas das coisas mais importantes, porque nesse caso ganhei mais confiança por ter feito tudo sem a ajuda direta de alguém, apenas com pesquisas. Com isso você começa a sentir que pode aprender praticamente qualquer coisa. Uma coisa importante, não é porque você se torna mais confiante que tudo vai ficar fácil, o que vai acontecer na verdade é remover a barreira para começar estudar novas áreas.
+
+- Paciência/Persistência. Paciência e persistência são coisas que andam juntas, porque para persistir é necessário paciência. Foram muitas horas pesquisando, testando e erros aparecendo para ver qual a melhor forma de fazer até chegar ao resultado final. E na minha opinião o contra ponto disso é que tudo tem um limite, vai ter coisas que parece que nunca vai conseguir aprender e é nesse momento que você deve parar de persistir, mas calma, é uma desistência temporária para se recuperar. Porque? Por experiência própria quando, quando você tenta muito e não consegue, isso começa afetar outros pontos, como confiança e motivação. A útima dica é que quando estiver difícil, não hesite em pedir ajuda se tiver alguém à disposição, pois é um caminho de duas vias, porque sempre vai ter algo que você sabe e que a outra pessoa não e vice-versa.
+
+- Foco. Sem ele, a paciência e persistência se tornam mais um fardo do que algo bom. Primeiro é preciso ter claro na mente seu objetivo para aí sim você começar a colocar a mão na massa. Após começar você precisa focar no que é `necessário` para resolver determinado problema. Parece meio óbvio não é? Mas tem um problema que acaba passando despercebido, principalmente nas pessoas que já `não` estão mais no nível iniciante, que é entrar a fundo demais em determinado assunto, assim fugindo do seu objetivo. Isso já aconteceu muito comigo, para aprender mais a fundo sobre determinado assunto a coisa mais importante que tem que ter em mente é o seu tempo.
+
+- Equilíbro. Você provavelmente já deve ter ouvido a frase "tudo em excesso faz mal" e faz mesmo. Mesmo os todos pontos acima serem muito importantes, eles em excesso podem se tornar um problema de alguma forma. Logo, se conseguir manter equilíbrio entre todos os outros que citei acima, seu tempo vai ser muito bem aproveitado e provavelmente se sentirá bem do início ao fim do projeto. Manter o equilibrio entre todos os pontos é difícil, mas isso vai se tornando mais fácil ao longo das suas experiências.
 
 ## Dúvidas?
 
