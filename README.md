@@ -1,6 +1,11 @@
-# <center> Temas e Dark Mode </center>
+# Temas e Dark Mode 
 
-Link do Exemplo: [Temas e Dark Mode](http://theme-with-sass.s3-website-sa-east-1.amazonaws.com/)
+<p align="center">
+	<img src="/app/public/images/themes-with-sass dark-mode.gif" width="49%" style="padding-right: 2%"/>
+  	<img src="/app/public/images/themes-with-sass theme-colors.gif" width="49%" style="padding-left: 2%"/> 
+</p>
+
+**Link do Exemplo:** [Temas e Dark Mode](http://theme-with-sass.s3-website-sa-east-1.amazonaws.com/)
 
 ## Observações importantes antes de começar
 
@@ -32,30 +37,58 @@ A função das variáveis CSS no primeiro momento pode parecer um pouco com a do
 
 Então basicamente o que vamos fazer é criar uma variável no Sass do tipo map, que vai ser basicamente uma lista de objetos para quem está acostumado com as linguagens de programação convencionais. Ela vai ser responsável por guardar nossos temas e as cores utilizadas em cada um.
 
+<p align="center">
+	<img src="/app/public/images/passo1.png" width="100%"/> 
+</p>
+
 ###  2º passo (Criar function para percorrer o map)
 
 Criar uma function no Sass que vai percorrer toda nossa lista de objetos para acessar determinado valor. 
 **OBS:** Essa function será recursiva, logo vc poderá criar basicamente encadeamentos infinitos na variável map que essa function vai conseguir acessar.
 
+<p align="center">
+	<img src="/app/public/images/passo2.png" width="100%"/> 
+</p>
+
 ###  3º passo (Criar loop para percorrer e gerar os temas)
 
 Aqui as coisas começam a ficar mais interessantes! Nós vamos fazer um loop no próprio Sass no qual ele vai percorrer toda a lista de temas e criar um data attribute para cada tema.
+
+<p align="center">
+	<img src="/app/public/images/passo3.png" width="100%"/> 
+</p>
 
 ###  4º passo (Gerar as variáveis CSS para cada item do loop) 
 
 Como vimos no passo anterior, conseguimos gerar seletores para cada tema, mas eles ainda não tem nada dentro deles. Então, esse passo é basicamente criar variáveis CSS dentro desse loop para cada item de cor que guardamos na variável de tema.
 
+<p align="center">
+	<img src="/app/public/images/passo4.png" width="100%"/> 
+</p>
+
 ###  5º passo (Utilizar as variáveis CSS nos elementos HTML) 
 
 Agora que já criamos todas variáveis CSS, chegou a hora de utilizá-las. E essa é uma das partes mais simples. é só adicionar o `var(nome_da_variavel)` no atributo que você quiser como na imagem abaixo.
+
+<p align="center">
+	<img src="/app/public/images/passo5.png" width="100%"/> 
+</p>
 
 ###  6º passo (rodar o Sass)
 
 É algo que pode ser óbvio para muitos, mas até os mais experientes podem esquecer. Neste passo você precisa rodar o Sass para gerar o arquivo CSS com todos os temas e variáveis CSS que você configurou.
 
+<p align="center">
+	<img src="/app/public/images/passo6.png" width="100%"/> 
+</p>
+
 ###  7º passo (adicionar o `data-theme`  com o tema default) 
 
 No 3º passo geramos vários `data-theme` com base na nossa variável de tema. Agora o que temos que fazer é simplesmente adicionar o `data-theme` com o tema default que a gente queira na tag `<html>` .
+
+<p align="center">
+	<img src="/app/public/images/passo7.png" width="100%"/> 
+</p>
 
 ###  Passo Final (Javascript eu escolho você!) 
 
@@ -65,8 +98,15 @@ Lembra que eu disse que tinha um pouco de Javascript? Pois é, chegou a vez dele
 
 Basta criar uma função que recebe o nome de um `data-theme` e dentro dela alterar o valor do `data-theme` da tag `<html>` e salvar isso no Local Storage. O Local Storage é uma espécie de cache do browser e ele é muito importante para salvarmos as preferências do usuário para ele não precisar ficar alterando o tema toda vez que acessar o sistema. Assim, ao fechar o browser e abrir novamente, basta recuperarmos o `data-theme` salvo no Local Storage e alterar o `data-theme` da tag  `<html>`.
 
+<p align="center">
+	<img src="/app/public/images/passo final.png" width="100%"/> 
+</p>
 
-Chegou a hora de ver a mágica acontecer! Repare na tag `<html>` , `<body>` e seus atributos na parte debaixo:
+**Chegou a hora de ver a mágica acontecer!** Repare na tag `<html>` , `<body>` e seus atributos na parte debaixo:
+
+<p align="center">
+	<img src="/app/public/images/themes-with-sass inspect.gif" width="100%"/> 
+</p>
 
 
 ## Bônus ([Dark theme - Material Design](https://material.io/design/color/dark-theme.html))
