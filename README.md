@@ -94,7 +94,7 @@ No 3º passo geramos vários `data-theme` com base na nossa variável de tema. A
 
 Com o 7º passo você já consegue alterar os temas manualmente. Para alterar basta inspecionar a tela (tecla F12) e alterar o valor do `data-theme` da tag `<html>`  para o valor de algum outro theme gerado, mas vamos finalizar isso com a cereja do bolo. 
 
-Lembra que eu disse que tinha um pouco de Javascript? Pois é, chegou a vez dele brilhar, mesmo que por pouco tempo rs. 
+Lembra que eu disse que tinha um pouco de Javascript? Pois é, chegou a vez dele brilhar, mesmo que por um pequeno momento. 
 
 Basta criar uma função que recebe o nome de um `data-theme` e dentro dela alterar o valor do `data-theme` da tag `<html>` e salvar isso no Local Storage. O Local Storage é uma espécie de cache do browser e ele é muito importante para salvarmos as preferências do usuário para ele não precisar ficar alterando o tema toda vez que acessar o sistema. Assim, ao fechar o browser e abrir novamente, basta recuperarmos o `data-theme` salvo no Local Storage e alterar o `data-theme` da tag  `<html>`.
 
