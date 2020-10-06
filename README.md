@@ -115,7 +115,7 @@ Antes de tudo é bom deixar claro que não sou UI/UX Designer, mas vamos lá.
 Você deve ter percebido que no código o dark mode nada mais é do que um tema normal como qualquer outro, mas a implementação do dark mode em específico foi baseado no [material design](https://material.io/design/color/dark-theme.html) do Google e inspirado no **YouTube**. 
 
 Porque é importante dizer isso? Porque muita gente pode achar que é fácil implementar esse tipo de funcionalidade. "É só colocar o fundo em preto e as letras em branco". Não, não é bem assim que funciona. Fazer a funcionalidade de temas realmente não é difícil, mas implementar do jeito certo, seguindo os padrões de design é bem mais complicado. 
-Não vou me alongar muito mais, mas aqui vai uma breve explicação com alguns dos motivos de não ser tão fácil assim:
+Não vou me alongar muito mais, mas aqui vai uma breve explicação com alguns dos motivos de não ser tão simples assim:
  
 - O contraste do preto e branco ainda é muito forte, então colocar praticamente só essas duas cores não vai ficar muito bom.
 
@@ -149,5 +149,5 @@ Algumas dúvidas que podem ter surgido:
 	> Não, porque tanto a variável do tipo map do Sass quanto as variáveis CSS aceitam quaisquer valores, então use sua criatividade. Quer mais um exemplo de uso? Você poderia criar uma variável que controlasse o tamanho da fonte de todos os elementos do sistema, como um recurso para melhorar a acessibilidade para algumas pessoas enxergarem melhor ou até mesmo utilizar isso junto com a responsividade, aumentando ou diminuindo a fonte de acordo com o tamanho da tela do usuário. Então use e abuse da sua criatividade!
 
 - É possível implementar dark mode/temas em qualquer sistema que utilizem essas tecnologias?
-	> Me desculpe, mas por enquanto essa é a única pergunta que irei responder com "depende" rs. Talvez você entenda melhor isso fazendo um tour pelos arquivos de Sass deste projeto e ver como foi utilizado as cores e variáveis CSS, e comparar com algum de seus projeto em andamento, mas fique tranquilo, não vou fugir da pergunta. 
+	> Me desculpe, mas por enquanto essa é a única pergunta que irei responder com "depende". Talvez você entenda melhor isso fazendo um tour pelos arquivos de Sass deste projeto e ver como foi utilizado as cores e variáveis CSS, e comparar com algum de seus projeto em andamento, mas fique tranquilo, não vou fugir da pergunta. 
 	Possível, eu até diria que é em qualquer sistema, mesmo que você demore meses ou até anos para implementar. Logo isso pode até ser possível, mas não viável, isso só você irá saber. Se você achou que isso depende da organização ou estrutura do projeto, você acertou!. Implementar isso em um projeto novo é fácil, não tem segredo, é só você lembrar de atribuir a variável CSS sempre que surgir um atributo relacionado a cor como: **color, background-color, box-shadow, etc.** e claro separar bem os componentes e as partes do sistema. Agora, implementar isso em um projeto com praticamente nenhuma padronização, eu garanto que você e/ou sua equipe terão um belo desafio pela frente.
