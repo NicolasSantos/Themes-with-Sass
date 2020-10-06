@@ -56,12 +56,12 @@ const clearFields = () => {
 
 const getListUsersDefault = () => {
     let users = [
-        { name: 'Nicolas1', email: 'nicolas1@email.com', cpf: '42445257859', phone: '12981957775' },
-        { name: 'Nicolas2', email: 'nicolas2@email.com', cpf: '42445257859', phone: '12981957775' },
-        { name: 'Nicolas3', email: 'nicolas3@email.com', cpf: '42445257859', phone: '12981957775' }
+        { name: 'Name 1', email: 'name1@email.com', cpf: '75831580016', phone: '12999999999' },
+        { name: 'Name 2', email: 'name2@email.com', cpf: '45145846061', phone: '12888888888' },
+        { name: 'Name 2', email: 'name3@email.com', cpf: '62214381015', phone: '12777777777' }
     ]
 
-    localStorage.setItem("listUsers", JSON.stringify(users));
+    return users;
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -76,6 +76,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
 
     if(!listUsers) {
-        getListUsersDefault();
+        localStorage.setItem("listUsers", JSON.stringify(getListUsersDefault()));
     }
 })

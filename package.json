@@ -11,5 +11,8 @@
     "test": "jest --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "common.js": "^1.1.1"
+  }
 }
