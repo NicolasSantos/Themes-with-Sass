@@ -125,7 +125,7 @@ Não vou me alongar muito mais, mas aqui vai uma breve explicação com alguns d
 
 ## Considerações
 
-Todo projeto novo costumamos aprender alguma coisa, por mais pequena que seja, mas nesse aqui eu diria que eu aprendi muito mais do que eu imaginava, porque isso mexeu tanto com minha parte técnica como pessoal.
+Todo projeto novo costumamos aprender alguma coisa, por mais pequena que seja, mas nesse aqui eu diria que eu aprendi muito mais do que eu imaginava, porque isso mexeu tanto com minha parte técnica quanto com a pessoal.
 
 Com relação a parte técnica eu aprendi: 
 
@@ -134,7 +134,7 @@ Com relação a parte técnica eu aprendi:
 - Depois de pesquisar sobre o dark mode, comecei a ver quais tecnologias eu poderia utilizar e aí que entra uma das partes mais legais, combinar/encaixar todas elas. Essa comunicação entre amis de uma tecnologia é essencial em qualquer projeto, porque raramente vai ter uma tecnologia específica que vai resolver todos os seus problemas.
 - Utilizar melhor alguns recursos do CSS como animações com o atributo `transition`, que é algo relativamente básico, mas que traz uma interação muito mais fluída com o usuário.
 
-Já a parte pessoal está relacionado tanto com as motivações para iniciar esse projeto como disse nos tópicos iniciais quanto com a forma e o tempo gasto para desenvolver o projeto. Vou elencar tanto alguns pontos positivos quanto alguns negativos ou de atenção juntos:
+Já a parte pessoal está relacionado tanto com as motivações como disse nos tópicos iniciais quanto com a forma e o tempo gasto para desenvolver o projeto. Vou elencar tanto alguns pontos positivos e negativos ou de atenção juntos:
 
 - Confiança. Pra mim isso foi umas das coisas mais importantes, porque nesse caso ganhei mais confiança por ter feito tudo sem a ajuda direta de alguém, apenas com pesquisas. Com isso você começa a sentir que pode aprender praticamente qualquer coisa. Uma coisa importante, não é porque você se torna mais confiante que tudo vai ficar fácil, o que vai acontecer na verdade é remover a barreira para começar estudar novas áreas.
 
@@ -142,7 +142,7 @@ Já a parte pessoal está relacionado tanto com as motivações para iniciar ess
 
 - Foco. Sem ele, a paciência e persistência se tornam mais um fardo do que algo bom. Primeiro é preciso ter claro na mente seu objetivo para aí sim você começar a colocar a mão na massa. Após começar você precisa focar no que é `necessário` para resolver determinado problema. Parece meio óbvio não é? Mas tem um problema que acaba passando despercebido, principalmente nas pessoas que já `não` estão mais no nível iniciante, que é entrar a fundo demais em determinado assunto, assim fugindo do seu objetivo. Isso já aconteceu muito comigo, para aprender mais a fundo sobre determinado assunto a coisa mais importante que tem que ter em mente é o seu tempo.
 
-- Equilíbro. Você provavelmente já deve ter ouvido a frase "tudo em excesso faz mal" e faz mesmo. Mesmo os todos pontos acima serem muito importantes, eles em excesso podem se tornar um problema de alguma forma. Logo, se conseguir manter equilíbrio entre todos os outros que citei acima, seu tempo vai ser muito bem aproveitado e provavelmente se sentirá bem do início ao fim do projeto. Manter o equilibrio entre todos os pontos é difícil, mas isso vai se tornando mais fácil ao longo das suas experiências.
+- Equilíbro. Você provavelmente já deve ter ouvido a frase "tudo em excesso faz mal" e faz mesmo. Mesmo os todos pontos acima serem muito importantes, eles em excesso podem se tornar um problema de alguma forma. Logo, se conseguir manter equilíbrio entre todos os outros que citei acima, seu tempo vai ser muito bem aproveitado e provavelmente se sentirá bem do início ao fim do projeto. Manter o equilibrio entre todos os pontos é difícil, mas isso vai se tornando mais fácil ao longo de suas experiências.
 
 ## Dúvidas?
 
