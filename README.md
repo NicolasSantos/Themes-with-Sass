@@ -132,7 +132,7 @@ Algumas dúvidas que podem ter surgido:
 	> Não, isso foi só uma preferência minha, pode ficar à vontade para colocar o nome que quiser.
 	
 - É possível fazer isso somente com Sass?
-	> Não, até porque na verdade você consegue fazer isso sem nenhum pré-processador. Como falamos lá o início a função do Sass é organizar melhor nosso código, deixá-lo mais limpo e facilitar a manutenibilidade. Então basicamente sua função é facilitar o nosso trabalho e deixá-lo mais escalável. Agora se perguntar se tem algo que faça a mesma coisa que o Sass, no momento eu diria que não sei. Para saber se existe outra que faça isso, você deveria pesquisar se os outros pré-processadores permitem a utilização de algumas características que utilizamos no Sass como a variável do tipo map(array de objetos) e as functions para percorrer toda a lista.
+	> Não, até porque na verdade você consegue fazer isso sem nenhum pré-processador. Como falamos lá o início a função do Sass é organizar melhor nosso código, deixá-lo mais limpo e facilitar a manutenibilidade. Então basicamente sua função é facilitar o nosso trabalho e deixá-lo mais escalável. Agora se perguntar se tem algo que faça a mesma coisa que o Sass, no momento eu vou dizer que não sei. Para saber se existe outra que faça isso, você terá que pesquisar se os outros pré-processadores permitem a utilização de algumas características que utilizamos no Sass como a variável do tipo map(array de objetos) e as functions para percorrer toda a lista.
 	
 - Essa é a única forma de gerar temas? Porque escolheu essa?
 	> Não, existem outras formas, inclusive quando realizei a pesquisa de como fazer isso, estava em teste uma solução nativa nos browsers. 
